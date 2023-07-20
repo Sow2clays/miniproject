@@ -1,0 +1,96 @@
+h1{
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h2{
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h3{
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.paragaf1{
+   margin-left: 30%; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+.paragaf2{
+    margin-left: 30%; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 36%;
+    background-color: whitesmoke;
+    margin-left: 30%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=radio]{
+    cursor: pointer;
+    padding: 40px 30px;
+    margin: 8px 3;
+}
+input[type=number]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+button[type=download]{
+    width: 30%;
+    background-color: #78C1F3;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit] {
+    width: 15%;
+    background-color: #78C1F3;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=reset] {
+    width: 10%;
+    background-color: white;
+    color: black;
+    padding: 14px;
+    margin: 8px 0;
+    border:  1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hasil{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 36%;
+    background-color: whitesmoke;
+    margin-left: 30%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
