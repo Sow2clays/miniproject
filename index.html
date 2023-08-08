@@ -7,60 +7,91 @@
     <script src="js/script.js"></script>    
 </head>
 <body>
+    <div class="snow">
+        <div class="flake"> ❅ </div>
+            <div class="flake"> ❅ </div>
+                <div class="flake"> ❆ </div>
+                    <div class="flake"> ❅ </div>
+                        <div class="flake"> ❅ </div>
+                            <div class="flake"> ❆ </div>
+                        <div class="flake"> ❅ </div>
+                    <div class="flake"> ❅ </div>
+                <div class="flake"> ❆ </div>
+            <div class="flake"> ❅ </div>
+        </div>
     <h1>Kalkulator BMI</h1>
         <div class="paragaf1">
             <p>
-                Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang<br>
-                berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengammu?<br>
-                Yuk,hitung sekarang di Kalkulator BMI<br>
-            </p>    
-        </div>
-        <div class= "form">
-            <label for="gender">Jenis Kelamin</label><br>
-            <input type="radio" name="gender" id="male" value="Pria" class="form-input-check" checked="checked">
-            <label for="male">Pria</label>
-            <input type="radio" name="gender" id="female" value="Wanita" class="form-input-check">
-            <label for="female">Wanita</label><br><br>   
-    
-            <label for="weight">Berat Badan(kg)</label><br>
-            &#9999;
-            <input type="number" name="weight" id="weight" class="form-input" min="1" aria-describedby="weightDesc"><br>
-        
-            <label for="age">Umur</label><br>
-            &#9999;
-            <input type="number" name="age" id="age" class="form-input" min="1" aria-describedby="ageDesc"><br><br>
-            
-            <label for="height">Tinggi Badan(cm)</label><br>
-            &#9999;
-            <input type="number" name="height" id="height" class="form-input" min="1" aria-describedby="heightDesc">
-
-            <button type="submit"  onclick="submit()">Hitung BMI</button>
-            <button type="reset">Reset</button><br>
-        </div>       
-        
+                Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
+                berat badan ideal juga menandakan kondisi tubuh yang sehat.<br>
+                Bagaimana dengammu?<br>
+                Yuk,hitung sekarang di Kalkulator BMI
+            </p>
+        </div> 
+            <div class="form-container">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin</label>
+                            </div>
+                                <div class="container">
+                                    <form>
+                                    <label>
+                                <input type="radio" name="radio" checked="">
+                            <span>Pria</span>
+                        </label>
+                    <label>
+                <input type="radio" name="radio">
+            <span>Wanita</span>
+        </label>
+        </form>
+            </div>                         
+                <div class="form-group">
+                    <label for="textarea">Berat Badan(kg)</label>
+                        <input type="number" id="weight" name="bb" required="">
+                            </div>
+                                <div class="form-group">
+                                    <label for="textarea">Umur</label>
+                                        <input type="number" id="age" name="umur" required="">
+                                    </div>
+                                <div class="form-group">
+                            <label for="textarea">Tinggi Badan(cm)</label>
+                        <input type="number" id="height" name="umur" required="">
+                    </div> 
+                 </form>
+            </div>
+        <div>
+            <button class="submit" onclick="submit()">Hitung BMI</button>
+            <button class="reset" onclick="clear()">Reset</button><br> 
+        </div>                            
         <h3>Keunggulan fitur</h3>
         <div class="paragaf2">
-            <p>
-                1. Menghitung berat badan<br>
-                2. Menentukan ketegori berat badan ideal atau tidak<br>
-                3. Mempersiapkan progam penurunan berat badan<br><br>
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan ketegori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan progam penurunan berat badan</li><br>
 
-                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh<br>
+                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
                 mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya<br>
                 selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter<br><br>
 
-                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai<br>
+                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai
                 umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi<br>
                 dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².
-            </p>
+            </ol>
         </div>
         <h2>Hasil</h2>
-        <div class="hasil">
-            <output id="deskripsi"></output><br><br>
-            <output id ="hasil"></output><br><br>
-            <output id ="kategori"></output><br><br>
-            <button type="download">Download Hasil BMI</button><br>
+            <div class="hasil">
+                <output id="deskripsi"></output><br><br>
+                    <output id ="hasil"></output><br><br>
+                        <output id ="kategori"></output><br><br>
+                            <div class="button">
+                                <div class="button-wrapper">
+                            <div class="text">Download Hasil BMI</div>
+                        <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                </span>
+            </div>
         </div>
-        
+    </div> 
 </body>
 </html>
