@@ -527,7 +527,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   }
-  .submit::after {
+  .submit::after {git 
     content: "";
     z-index: -1;
     position: absolute;
